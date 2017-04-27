@@ -55,11 +55,7 @@
 	    IndexRoute = _require.IndexRoute,
 	    hashHistory = _require.hashHistory;
 
-	ReactDOM.render(React.createElement(
-	  'h1',
-	  null,
-	  'React Weather!'
-	), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Router, { history: hashHistory }), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
