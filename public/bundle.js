@@ -24844,13 +24844,16 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
+	var Nav = __webpack_require__(218);
 
 	var Main = React.createClass({
 	  displayName: 'Main',
 
 	  render: function render() {
-	    return (
-	      //<Nav />
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(Nav, null),
 	      React.createElement(
 	        'h2',
 	        null,
@@ -24861,6 +24864,29 @@
 	});
 
 	module.exports = Main;
+
+/***/ }),
+/* 217 */,
+/* 218 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Nav = React.createClass({
+	  displayName: 'Nav',
+
+	  render: function render() {
+	    return React.createElement(
+	      'h2',
+	      null,
+	      'Nav'
+	    );
+	  }
+	});
+
+	module.exports = Nav;
 
 /***/ })
 /******/ ]);
