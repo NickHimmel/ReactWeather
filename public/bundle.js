@@ -24849,10 +24849,13 @@
 	  displayName: 'Main',
 
 	  render: function render() {
-	    return React.createElement(
-	      'h2',
-	      null,
-	      'Main Component'
+	    return (
+	      //<Nav />
+	      React.createElement(
+	        'h2',
+	        null,
+	        'Main Component'
+	      )
 	    );
 	  }
 	});
