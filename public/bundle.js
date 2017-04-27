@@ -55,7 +55,13 @@
 	    IndexRoute = _require.IndexRoute,
 	    hashHistory = _require.hashHistory;
 
-	ReactDOM.render(React.createElement(Router, { history: hashHistory }), document.getElementById('app'));
+	var Main = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Main\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+	ReactDOM.render(React.createElement(
+	  Router,
+	  { history: hashHistory },
+	  React.createElement(Route, { path: '/', component: Main })
+	), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
