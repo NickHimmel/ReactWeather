@@ -24996,18 +24996,31 @@
 /* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(1);
 
 	var WeatherForm = React.createClass({
-	  displayName: 'WeatherForm',
+	  displayName: "WeatherForm",
 
 	  render: function render() {
 	    return React.createElement(
-	      'h4',
+	      "form",
 	      null,
-	      'Weather Form'
+	      React.createElement(
+	        "div",
+	        null,
+	        React.createElement("input", { type: "text", placeholder: "Enter city name" })
+	      ),
+	      React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "button",
+	          null,
+	          "Get Weather"
+	        )
+	      )
 	    );
 	  }
 	});

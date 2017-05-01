@@ -3,7 +3,14 @@ var React = require('react');
 var WeatherForm = React.createClass({
   render: function () {
     return (
-      <h4>Weather Form</h4>
+      <form>
+        <div>
+          <input type="text" placeholder="Enter city name"/>
+        </div>
+        <div>
+          <button>Get Weather</button>
+        </div>
+      </form>
     );
   }
 });
