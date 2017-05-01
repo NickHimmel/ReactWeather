@@ -3,7 +3,7 @@ var React = require('react');
 var Weather = React.createClass({
   render: function () {
     return (
-      <h3>Weather Component</h3>
+      <h3>Get Weather</h3>
     );
   }
 });

@@ -24935,7 +24935,7 @@
 	    return React.createElement(
 	      'h3',
 	      null,
-	      'Weather Component'
+	      'Get Weather'
 	    );
 	  }
 	});
